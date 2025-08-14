@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMHS - Contact Us</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav id="main-nav"></nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h4><u>Contact Us</u></h4>
+            <div class="Email__Container">
+                <div class="Email__Form">
+                    <h1>Send Us a Message</h1>
+                    <img src="/assets/WMHS__Stamp.png" alt="Stamp" class="stamp">
+                    <form action="https://formsubmit.co/westernmasshome@gmail.com" method="POST" id="email__form">
+                        <div class="form__grid">
+                            <div class="form__left">
+                                <input type="hidden" name="_next" value="https://www.westernmasshome.com/thank-you.html">
+                                <input type="hidden" name="_captcha" value="false">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="contact67@email.com">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+                                <label for="subject">Subject</label>
+                                <select name="subject" id="subject" required>
+                                    <option value="other">Other</option>
+                                    <option value="Electrical">Electrical</option>
+                                    <option value="Plumbing">Plumbing</option>
+                                    <option value="Appliance Repair">Appliance Repair</option>
+                                    <option value="Bathroom Remodeling">Bathroom Remodeling</option>
+                                    <option value="Carpentry">Carpentry</option>
+                                    <option value="Maintenance">Maintenance</option>
+                                </select>
+                            </div>
+                            <div class="form__right">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="24" autocorrect="on" placeholder="Hello, I am looking for someone to..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form__address">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" placeholder="123 Main St, Springfield, MA" required>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="Grid__Container">
+            <div class="grid-items" onclick="window.location.href='tel:+1413349647'">
+                <img src="assets/Icon__Phone.png" id="Icon__Phone" alt="Phone Icon">
+                <p>Call - Text:</p>
+                <a href="tel:+1413349647">1-(413)-349-9647</a>
+            </div>
+            <div class="grid-items1" onclick="window.location.href='mailto:office@westernmasshome.com'">
+                <img src="assets/Icon__Email.png" id="Icon__Email" alt="Email Icon">
+                <p>Email:</p>
+                <a href="mailto:office@westernmasshome.com">office@westernmasshome.com</a>
+            </div>
+            <div class="grid-items2">
+                <img src="assets/Icon__Web.png" id="Icon humilityweb" alt="Website Icon">
+                <p>Online:</p>
+                <a href="https://www.westernmasshome.com" target="_blank">westernmasshome.com</a>
+            </div>
+            <div class="grid-items3" onclick="window.location.href='https://www.facebook.com/westernmasshome'">
+                <img src="assets/Icon__Facebook.png" id="Icon__Facebook" alt="Facebook Icon">
+                <p>Facebook:</p>
+                <a href="https://www.facebook.com/westernmasshome" target="_blank">www.facebook.com/WMHS</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Western Mass Home Services. 
+            <div></div>All rights reserved.</p>
+    </footer>
+    <script src="js/navigation.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
